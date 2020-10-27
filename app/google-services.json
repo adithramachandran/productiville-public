@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "500262578996",
+    "firebase_url": "https://productiville-9b19e.firebaseio.com",
+    "project_id": "productiville-9b19e",
+    "storage_bucket": "productiville-9b19e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500262578996:android:6501921422147d8149d361",
+        "android_client_info": {
+          "package_name": "com.example.android.productiville"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500262578996-oc7c4u1o4s7v870mpeqbf2jjddckgbjv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.productiville",
+            "certificate_hash": "a52b446d6c100587333957c8bbd1437b4d537854"
+          }
+        },
+        {
+          "client_id": "500262578996-008v11gpmhnvdkf60edk4eiph1d3qr5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa8PTq-fpDbWviDTgbZDfVo9ccFwxjzR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500262578996-008v11gpmhnvdkf60edk4eiph1d3qr5a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

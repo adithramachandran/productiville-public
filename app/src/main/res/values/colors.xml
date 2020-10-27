@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CDBD2F</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#CDBD2F</color>
+    <color name="greyedOutTextSubTask">#707070</color>
+    <color name="normalTextSubTask">#b3b3b3</color>
+    <color name="dimYellow">#948821</color>
+</resources>

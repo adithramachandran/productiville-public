@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/cityFragment">
+
+    <fragment
+        android:id="@+id/cityFragment"
+        android:name="com.example.android.productiville.city.CityFragment"
+        android:label="CityFragment" >
+        <action
+            android:id="@+id/action_cityFragment_to_weeklyFragment"
+            app:destination="@id/weeklyFragment"
+            app:enterAnim="@anim/slide_up"
+            app:popUpTo="@id/cityFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/weeklyFragment"
+        android:name="com.example.android.productiville.weekly.WeeklyFragment"
+        android:label="WeeklyFragment" >
+        <action
+            android:id="@+id/action_weeklyFragment_to_cityFragment"
+            app:destination="@id/cityFragment"
+            app:enterAnim="@anim/slide_down"
+            app:popUpTo="@id/cityFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_weeklyFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment"
+            app:popUpTo="@id/weeklyFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_weeklyFragment_to_editTaskFragment"
+            app:destination="@id/editTaskFragment"
+            app:popUpTo="@id/weeklyFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.example.android.productiville.addTask.AddTaskFragment"
+        android:label="AddTaskFragment" >
+        <action
+            android:id="@+id/action_addTaskFragment_to_weeklyFragment"
+            app:destination="@id/weeklyFragment"
+            app:popUpTo="@id/weeklyFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/editTaskFragment"
+        android:name="com.example.android.productiville.editTask.EditTaskFragment"
+        android:label="EditTaskFragment" >
+        <action
+            android:id="@+id/action_editTaskFragment_to_weeklyFragment"
+            app:destination="@id/weeklyFragment"
+            app:popUpTo="@id/weeklyFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

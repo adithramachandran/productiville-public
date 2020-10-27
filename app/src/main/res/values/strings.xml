@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Productiville</string>
+    <string name="calendar">Calendar</string>
+    <string name="weekly">Weekly</string>
+    <string name="web_client_id">500262578996-oc7c4u1o4s7v870mpeqbf2jjddckgbjv.apps.googleusercontent.com</string>
+    <string name="taskName">Task Name</string>
+    <string name="taskDay">Task Day</string>
+    <string name="startTime">Start Time</string>
+    <string name="createSubTask">New Subtask</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="set_title">Set Title</string>
+    <string name="subtask">subtask</string>
+    <string name="repeat_until">Repeat until</string>
+    <string name="forever">(forever)</string>
+    <string name="or_for">or for</string>
+    <string name="occurrences">occurrences</string>
+    <string name="new_task">New Task</string>
+    <string name="weekly_button">Tasks</string>
+    <string name="all_done">All Done!</string>
+    <string name="edit">Edit</string>
+    <string name="add_some_subtasks">Add Some Subtasks +</string>
+    <string-array name="spinnerArray">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+    </string-array>
+</resources>

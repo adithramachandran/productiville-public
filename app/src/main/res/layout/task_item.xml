@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="event"
+            type="com.example.android.productiville.calendarApiService.Event" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/taskCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="#1C1C1C"
+        app:cardCornerRadius="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/taskName"
+                android:layout_width="268dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/work_sans"
+                android:gravity="center_vertical"
+                android:text="@string/taskName"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:taskName="@{event}" />
+
+            <TextView
+                android:id="@+id/dayOfWeek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/work_sans"
+                android:text="@string/taskDay"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/taskName"
+                app:layout_constraintTop_toTopOf="@+id/taskName"
+                app:taskDay="@{event}" />
+
+            <TextView
+                android:id="@+id/startTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/work_sans"
+                android:text="@string/startTime"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/taskName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/taskName"
+                app:layout_constraintTop_toBottomOf="@+id/dayOfWeek"
+                app:startTime="@{event}" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/editTaskButton"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:visibility="gone"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/ic_create_24px"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/addSubTaskButton"
+                app:layout_constraintEnd_toStartOf="@+id/addSubTaskButton"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addSubTaskButton"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:visibility="gone"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/ic_add_black_24dp"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/closeEditPanelButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:visibility="gone"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/ic_clear_white_24dp"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/addSubTaskButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/addSubTaskButton" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addSubTaskButton">
+
+                <LinearLayout
+                    android:id="@+id/subTasks"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
